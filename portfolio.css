@@ -922,3 +922,7 @@ h1 {
         flex-wrap: wrap;
     }
 }
+
+#about, #projects, #skills, #contact {
+    scroll-margin-top: 100px;
+}
