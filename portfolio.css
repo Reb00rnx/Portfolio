@@ -37,7 +37,6 @@ body {
     background: #000000;
 }
 
-/* ===== TŁO JASKINI ===== */
 .cave-background {
     position: fixed;
     top: 0;
@@ -66,7 +65,6 @@ body {
     pointer-events: none;
 }
 
-/* ===== POCHODNIE - ELEMENTY WIDOCZNE ===== */
 .torch {
     position: fixed;
     display: flex;
@@ -87,7 +85,6 @@ body {
     transform: translateY(-50%);
 }
 
-/* Słupek pochodni */
 .torch-stick {
     width: 20px;
     height: 120px;
@@ -110,7 +107,6 @@ body {
     border-radius: 50% 50% 0 0;
 }
 
-/* Ogień pochodni */
 .torch-flame {
     position: relative;
     width: 50px;
@@ -161,7 +157,6 @@ body {
     border-radius: 50%;
 }
 
-/* Światło z pochodni */
 .torch-light {
     position: absolute;
     border-radius: 50%;
@@ -190,25 +185,29 @@ body {
 }
 
 @keyframes torch-flicker {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 0.6;
         transform: translateY(-50%) scaleY(1);
     }
+
     25% {
         opacity: 0.9;
         transform: translateY(-50%) scaleY(1.08);
     }
+
     50% {
         opacity: 0.7;
         transform: translateY(-50%) scaleY(0.95);
     }
+
     75% {
         opacity: 0.85;
         transform: translateY(-50%) scaleY(1.05);
     }
 }
 
-/* ===== GŁÓWNA ZAWARTOŚĆ ===== */
 .container {
     position: relative;
     width: 100%;
@@ -231,7 +230,6 @@ body {
     justify-content: center;
 }
 
-/* ===== NAGŁÓWEK Z EFEKTEM OGNIA ===== */
 h1 {
     font-family: 'Cinzel', serif;
     font-size: 4.5rem;
@@ -249,11 +247,14 @@ h1 {
 }
 
 @keyframes flame-glow {
-    0%, 100% {
+
+    0%,
+    100% {
         background-position: 0% 50%;
         filter: drop-shadow(0 0 15px rgba(255, 100, 0, 0.4));
         text-shadow: 0 0 30px rgba(255, 100, 0, 0.5);
     }
+
     50% {
         background-position: 100% 50%;
         filter: drop-shadow(0 0 30px rgba(255, 140, 0, 0.7));
@@ -261,7 +262,6 @@ h1 {
     }
 }
 
-/* ===== PODTEKST ===== */
 .subtitle {
     font-size: 1.4rem;
     color: #d4a574;
@@ -277,13 +277,13 @@ h1 {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-/* ===== PRZYCISKI ===== */
 .cta-buttons {
     display: flex;
     gap: 20px;
@@ -346,7 +346,6 @@ h1 {
     box-shadow: 0 0 25px rgba(255, 99, 71, 0.7), inset 0 0 20px rgba(255, 99, 71, 0.2);
 }
 
-/* ===== HEADER ===== */
 .header {
     position: fixed;
     top: 0;
@@ -410,7 +409,6 @@ h1 {
     text-shadow: 0 0 10px rgba(255, 165, 0, 0.4);
 }
 
-/* ===== SEKCJE ===== */
 .distancer {
     min-height: 100vh;
     align-items: center;
@@ -460,15 +458,17 @@ h1 {
 }
 
 @keyframes line-glow {
-    0%, 100% {
+
+    0%,
+    100% {
         box-shadow: 0 0 10px rgba(255, 136, 0, 0.5);
     }
+
     50% {
         box-shadow: 0 0 20px rgba(255, 136, 0, 0.8);
     }
 }
 
-/* ===== SKILLS SECTION ===== */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -490,8 +490,8 @@ h1 {
 
 .skill-card:hover {
     border-color: rgba(255, 165, 0, 0.8);
-    box-shadow: 0 0 30px rgba(255, 165, 0, 0.5), 
-                inset 0 0 20px rgba(255, 100, 0, 0.1);
+    box-shadow: 0 0 30px rgba(255, 165, 0, 0.5),
+        inset 0 0 20px rgba(255, 100, 0, 0.1);
     background: rgba(255, 69, 0, 0.1);
     transform: translateY(-5px);
 }
@@ -560,7 +560,6 @@ h1 {
     background: rgba(255, 140, 0, 0.1);
 }
 
-/* ===== PROJECTS SECTION ===== */
 .projects h1 {
     text-align: left;
     font-size: 2.5rem;
@@ -609,7 +608,7 @@ h1 {
 .project-card:hover {
     border-color: rgba(255, 165, 0, 0.8);
     box-shadow: 0 0 40px rgba(255, 100, 0, 0.6),
-                inset 0 0 30px rgba(255, 100, 0, 0.1);
+        inset 0 0 30px rgba(255, 100, 0, 0.1);
     background: rgba(255, 69, 0, 0.1);
     transform: translateY(-10px);
 }
@@ -690,70 +689,6 @@ h1 {
     text-shadow: 0 0 10px rgba(255, 165, 0, 0.3);
 }
 
-@media (max-width: 768px) {
-    .torch {
-        display: none;
-    }
-
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    .subtitle {
-        font-size: 1rem;
-    }
-
-    .about h1,
-    .skills h1,
-    .projects h1 {
-        font-size: 1.8rem !important;
-    }
-
-    .projects-container {
-        grid-template-columns: 1fr;
-    }
-    
-    .project-card {
-        min-height: 300px;
-    }
-
-    .footer {
-        padding: 40px 20px 20px;
-    }
-
-    .footer-content {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .footer-divider {
-        display: none;
-    }
-
-    .contact-link {
-        flex-wrap: wrap;
-    }
-
-    .nav {
-        font-size: 14px;
-        gap: 15px;
-        padding-right: 15px;
-    }
-
-    .portfolio-title {
-        font-size: 0.9rem;
-        left: 10px;
-    }
-
-    .hi {
-        margin-top: 100px;
-    }
-
-    .distancer {
-        padding: 60px 20px;
-        margin-top: 20px;
-    }
-}
 .footer {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.9) 100%);
     border-top: 2px solid;
@@ -778,10 +713,13 @@ h1 {
 }
 
 @keyframes line-shimmer {
-    0%, 100% {
+
+    0%,
+    100% {
         background-position: 0% 0%;
         box-shadow: 0 0 20px rgba(255, 165, 0, 0.5);
     }
+
     50% {
         background-position: 100% 0%;
         box-shadow: 0 0 30px rgba(255, 100, 0, 0.8);
@@ -897,32 +835,109 @@ h1 {
 }
 
 @keyframes pulse {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 0.8;
         text-shadow: 0 0 10px rgba(255, 165, 0, 0.3);
     }
+
     50% {
         opacity: 1;
         text-shadow: 0 0 20px rgba(255, 165, 0, 0.6);
     }
 }
 
+#about,
+#projects,
+#skills,
+#contact {
+    scroll-margin-top: 100px;
+}
+
 @media (max-width: 768px) {
+
+    .torch {
+        display: none;
+    }
+
+
+    .content {
+        padding: 20px;
+    }
+
+
+    .hi {
+        margin-top: 40px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .distancer {
+        padding: 60px 20px;
+        margin-top: 20px;
+    }
+
+    .about h1,
+    .skills h1,
+    .projects h1 {
+        font-size: 1.8rem !important;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        min-height: 300px;
+    }
+
+
+    .project-content {
+        opacity: 1;
+    }
+
+
+    .projects-hint {
+        display: none;
+    }
+
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav {
+        font-size: 14px;
+        gap: 15px;
+        padding-right: 15px;
+    }
+
+    .portfolio-title {
+        font-size: 0.9rem;
+        left: 10px;
+    }
+
     .footer {
         padding: 40px 20px 20px;
     }
+
     .footer-content {
         grid-template-columns: 1fr;
         gap: 30px;
     }
+
     .footer-divider {
         display: none;
     }
+
     .contact-link {
         flex-wrap: wrap;
     }
-}
-
-#about, #projects, #skills, #contact {
-    scroll-margin-top: 100px;
 }
