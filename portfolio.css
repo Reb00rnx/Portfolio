@@ -505,6 +505,10 @@ h1 {
     text-transform: uppercase;
 }
 
+.legendary-link{
+    color: #ff1100;
+}
+
 .skill-tags {
     display: flex;
     flex-wrap: wrap;
