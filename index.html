@@ -10,6 +10,8 @@
     <meta name="author" content="Patryk Krysztoforski">
     <meta name="theme-color" content="#ff8800">
     <title>Patryk Krysztoforski - Full Stack Developer Portfolio</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%94%A5</text></svg>">
     <link rel="stylesheet" href="portfolio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVJkEZSMUkrQ6usKu8zIvinjuD9MxkxQEwBkSZlUAd56Lesi9WBvw0ea60YQKXYyYWD28Jrsuc0g=="
@@ -59,8 +61,9 @@
             <div class="distancer">
                 <h1 class="hi">Hi, I'm Patryk</h1>
                 <p class="subtitle">
-                    Aspiring Full Stack Developer. I began my journey securing the backend with Java; now, I am bringing
-                    that data to life using Angular and modern CSS, ensuring a complete and polished product.
+                    Junior Java Backend Developer based in Poznań, Poland. I build backend systems with Spring Boot,
+                    focusing on clean APIs, data integrity, and production-readiness — currently exploring
+                    microservices, event-driven architecture, and Kafka.
                 </p>
                 <div class="cta-buttons">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
@@ -72,21 +75,29 @@
                 <section id="about" class="about">
                     <h1>About Me</h1>
                     <h3 class="text-header">Who I Am</h3>
-                    <p class="text">I'm a passionate full stack developer with a foundation in backend development using
-                        Java.
-                        My journey has led me to explore frontend technologies like Angular and modern CSS to create
-                        engaging and responsive user interfaces.</p>
+                    <p class="text">I'm a Junior Backend Developer with a degree in Automation and Robotics and
+                        commercial experience working in production codebases. I'm comfortable reading unfamiliar
+                        code, making targeted changes, and leaving things cleaner than I found them. I also integrate
+                        AI tooling into my daily workflow as a force multiplier, not a shortcut.</p>
 
                     <h3 class="text-header">What I Do</h3>
-                    <p class="text">I specialize in creating secure, scalable REST APIs using Spring Boot, with a solid
-                        understanding of backend technologies including JPA/Hibernate and MySQL. I focus on clean code,
-                        testing, and implementing best practices in software architecture and now also making use of
-                        modern frontend frameworks like Angular.</p>
+                    <p class="text">I specialize in building secure, scalable REST APIs with Spring Boot, backed by
+                        Spring Data JPA/Hibernate and PostgreSQL/MySQL. I write Liquibase migrations, cover business
+                        logic with JUnit 5 and Mockito, and care about clean code and solid software architecture —
+                        with Angular/TypeScript for the occasional frontend.</p>
+
+                    <h3 class="text-header">Recent Experience</h3>
+                    <p class="text">Maintained and extended a customer service platform for a fintech/trading
+                        company — a production system used daily by agents and clients. Touched both the API layer
+                        and the database side: new endpoints, schema migrations via Liquibase, and refactoring
+                        legacy parts of the codebase that had accumulated technical debt. Worked within an Agile
+                        team, using GitLab for version control and CI/CD, Jira for task tracking, and Confluence for
+                        documentation.</p>
 
                     <h3 class="text-header">My Goal</h3>
-                    <p class="text">I'm seeking a Junior/Trainee position where I can develop professionally, strengthen
-                        my skills in software architecture, and contribute to meaningful projects while continuing to
-                        grow as a developer.</p>
+                    <p class="text">I'm currently looking for my next opportunity — a team where backend engineering
+                        is taken seriously, I can keep strengthening my skills in software architecture, and settle
+                        in for the long run rather than hop between short stints.</p>
                 </section>
             </div>
 
@@ -97,24 +108,26 @@
                     <div class="projects-container">
                         <div class="project-card">
                             <div class="project-content">
-                                <h3>Bank Account System</h3>
-                                <p class="project-description">A robust backend system for managing bank accounts. Built
-                                    with Spring Boot, featuring secure transactions, user authentication, and database
-                                    management with MySQL.</p>
+                                <h3>🏨 StayHub <span class="status-badge">In Progress</span></h3>
+                                <p class="project-description">A hotel reservation system backend — handles
+                                    properties, rooms, and bookings while making sure two guests can never book the
+                                    same room at the same time. Currently in active development.</p>
                                 <div class="project-tech">
+                                    <span class="tech-tag">Java 21</span>
                                     <span class="tech-tag">Spring Boot</span>
-                                    <span class="tech-tag">MySQL</span>
-                                    <span class="tech-tag">REST API</span>
+                                    <span class="tech-tag">PostgreSQL</span>
+                                    <span class="tech-tag">Liquibase</span>
+                                    <span class="tech-tag">Docker</span>
                                 </div>
                             </div>
                         </div>
 
                         <div class="project-card">
                             <div class="project-content">
-                                <h3>UniPortal</h3>
-                                <p class="project-description">A full-stack university portal application. Features user
-                                    authentication, course management, and student information system. Built with
-                                    Angular frontend and Spring Boot backend.</p>
+                                <h3>🎓 UniPortal</h3>
+                                <p class="project-description">A REST API for university management, with JWT
+                                    authentication and role-based access for students and teachers — course
+                                    enrollment, grading, and scheduling. Paired with a deployed Angular frontend.</p>
                                 <a class="legendary-link" href="https://uniportall.netlify.app" target="_blank"
                                     rel="noopener noreferrer">Open UniPortal</a>
                                 <div class="project-tech">
@@ -127,14 +140,14 @@
 
                         <div class="project-card">
                             <div class="project-content">
-                                <h3>Portfolio Website</h3>
-                                <p class="project-description">This portfolio website showcasing my skills and projects.
-                                    Features smooth animations, responsive design, and a modern cave-themed interface
-                                    with fire effects.</p>
+                                <h3>🏦 Bank Transactional System</h3>
+                                <p class="project-description">A smaller, earlier project — a banking backend handling
+                                    client accounts, deposits/withdrawals/transfers with balance validation, and full
+                                    transaction history.</p>
                                 <div class="project-tech">
-                                    <span class="tech-tag">HTML/CSS</span>
-                                    <span class="tech-tag">JavaScript</span>
-                                    <span class="tech-tag">Responsive</span>
+                                    <span class="tech-tag">Spring Boot</span>
+                                    <span class="tech-tag">MySQL</span>
+                                    <span class="tech-tag">REST API</span>
                                 </div>
                             </div>
                         </div>
@@ -148,40 +161,45 @@
 
                     <div class="skills-grid">
                         <div class="skill-card">
-                            <h3>Languages</h3>
+                            <h3>Backend</h3>
                             <div class="skill-tags">
                                 <span class="skill-tag">Java</span>
                                 <span class="skill-tag">SQL</span>
+                                <span class="skill-tag">Spring Boot</span>
+                                <span class="skill-tag">Spring Security</span>
+                                <span class="skill-tag">Spring Data JPA</span>
+                                <span class="skill-tag">Hibernate</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <h3>Frontend</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">HTML/CSS</span>
+                                <span class="skill-tag">Angular</span>
                                 <span class="skill-tag">TypeScript</span>
                             </div>
                         </div>
 
                         <div class="skill-card">
-                            <h3>Frameworks</h3>
+                            <h3>Data</h3>
                             <div class="skill-tags">
-                                <span class="skill-tag">Spring Boot</span>
-                                <span class="skill-tag">Spring Security</span>
-                                <span class="skill-tag">Spring Data JPA</span>
-                                <span class="skill-tag">Angular</span>
-                            </div>
-                        </div>
-
-                        <div class="skill-card">
-                            <h3>Databases</h3>
-                            <div class="skill-tags">
-                                <span class="skill-tag">MySQL</span>
                                 <span class="skill-tag">PostgreSQL</span>
-                                <span class="skill-tag">MongoDB</span>
+                                <span class="skill-tag">MySQL</span>
+                                <span class="skill-tag">Liquibase</span>
                             </div>
                         </div>
 
                         <div class="skill-card">
-                            <h3>Tools</h3>
+                            <h3>Tooling</h3>
                             <div class="skill-tags">
-                                <span class="skill-tag">Git/GitHub</span>
-                                <span class="skill-tag">IntelliJ IDEA</span>
                                 <span class="skill-tag">Docker</span>
+                                <span class="skill-tag">Git/GitLab</span>
+                                <span class="skill-tag">GitLab CI/CD</span>
+                                <span class="skill-tag">Maven</span>
+                                <span class="skill-tag">IntelliJ IDEA</span>
                                 <span class="skill-tag">Postman</span>
+                                <span class="skill-tag">Linux Shell</span>
                             </div>
                         </div>
 
@@ -190,16 +208,17 @@
                             <div class="skill-tags">
                                 <span class="skill-tag">JUnit 5</span>
                                 <span class="skill-tag">Mockito</span>
-                                <span class="skill-tag">Jest</span>
                             </div>
                         </div>
 
                         <div class="skill-card">
-                            <h3>Other</h3>
+                            <h3>Workflow</h3>
                             <div class="skill-tags">
-                                <span class="skill-tag">HTML/CSS</span>
-                                <span class="skill-tag">REST APIs</span>
-                                <span class="skill-tag">Responsive Design</span>
+                                <span class="skill-tag">REST API Design</span>
+                                <span class="skill-tag">Clean Code</span>
+                                <span class="skill-tag">Scrum/Agile</span>
+                                <span class="skill-tag">Jira</span>
+                                <span class="skill-tag">Confluence</span>
                             </div>
                         </div>
                     </div>
@@ -249,6 +268,8 @@
             </footer>
         </div>
     </div>
+
+    <script src="portfolio.js"></script>
 
 </body>
 
